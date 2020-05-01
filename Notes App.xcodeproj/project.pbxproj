@@ -13,6 +13,8 @@
 		A66BCD5F245C163300C42639 /* Notes_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A66BCD5D245C163300C42639 /* Notes_App.xcdatamodeld */; };
 		A66BCD61245C163400C42639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66BCD60245C163400C42639 /* Assets.xcassets */; };
 		A66BCD64245C163400C42639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66BCD62245C163400C42639 /* LaunchScreen.storyboard */; };
+		A66E4D71245C891C002C9112 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4D70245C891C002C9112 /* Note.swift */; };
+		A66E4D74245C8DA5002C9112 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4D73245C8DA5002C9112 /* Date+convertToString.swift */; };
 		A680476C245C4EB000612066 /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680476B245C4EB000612066 /* ListNotesTableViewController.swift */; };
 		A680476E245C638D00612066 /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680476D245C638D00612066 /* ListNotesTableViewCell.swift */; };
 		A6804770245C65CA00612066 /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680476F245C65CA00612066 /* DisplayNoteViewController.swift */; };
@@ -27,6 +29,8 @@
 		A66BCD60245C163400C42639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66BCD63245C163400C42639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66BCD65245C163400C42639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66E4D70245C891C002C9112 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A66E4D73245C8DA5002C9112 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		A680476B245C4EB000612066 /* ListNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewController.swift; sourceTree = "<group>"; };
 		A680476D245C638D00612066 /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
 		A680476F245C65CA00612066 /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		A66BCD53245C163300C42639 /* Notes App */ = {
 			isa = PBXGroup;
 			children = (
+				A66E4D72245C8D53002C9112 /* Extensions */,
 				A6804769245C4E5C00612066 /* Model */,
 				A680476A245C4E6400612066 /* View */,
 				A6804768245C4E5300612066 /* Controller */,
@@ -76,6 +81,14 @@
 			path = "Notes App";
 			sourceTree = "<group>";
 		};
+		A66E4D72245C8D53002C9112 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A66E4D73245C8DA5002C9112 /* Date+convertToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A6804768245C4E5300612066 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		A6804769245C4E5C00612066 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A66E4D70245C891C002C9112 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A680476E245C638D00612066 /* ListNotesTableViewCell.swift in Sources */,
+				A66E4D74245C8DA5002C9112 /* Date+convertToString.swift in Sources */,
+				A66E4D71245C891C002C9112 /* Note.swift in Sources */,
 				A66BCD55245C163300C42639 /* AppDelegate.swift in Sources */,
 				A680476C245C4EB000612066 /* ListNotesTableViewController.swift in Sources */,
 				A6804770245C65CA00612066 /* DisplayNoteViewController.swift in Sources */,

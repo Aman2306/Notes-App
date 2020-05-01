@@ -21,20 +21,26 @@ class ListNotesTableViewController: UITableViewController {
     }
     
     // MARK:- Properties
-    let namesArray = ["Aman", "Kanha", "Radhey", "Ishika"]
+    var notes = [Note]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return namesArray.count
+        return notes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
         
         // Configure the cell...
-        cell.configureCell()
+        let note = notes[indexPath.row]
+        cell.noteTitleLabel.text = note.title
+        cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
         
         return cell
     }
